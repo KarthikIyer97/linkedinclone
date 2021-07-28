@@ -1,0 +1,60 @@
+[debug] [2021-07-10T18:24:04.593Z] ----------------------------------------------------------------------
+[debug] [2021-07-10T18:24:04.599Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-10T18:24:04.601Z] CLI Version:   9.14.0
+[debug] [2021-07-10T18:24:04.601Z] Platform:      win32
+[debug] [2021-07-10T18:24:04.601Z] Node Version:  v14.16.1
+[debug] [2021-07-10T18:24:04.605Z] Time:          Sat Jul 10 2021 23:54:04 GMT+0530 (India Standard Time)
+[debug] [2021-07-10T18:24:04.606Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-10T18:24:04.630Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-10T18:24:04.630Z] > authorizing via signed-in user (karthik1997.iyer@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Dell\Desktop\thapareact\linkedin-clone-yt
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-07-10T18:24:28.621Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-07-10T18:24:29.581Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-07-10T18:24:29.582Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project linkedin-clone-yt-eaf07 (linkedin-clone-yt) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\Dell\Desktop\thapareact\linkedin-clone-yt 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=468640452&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-10T18:25:22.765Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"c8defdfdf6dbdfc6b6c5","redirect_uri":"http://localhost:9005","state":"468640452"}
+[debug] [2021-07-10T18:25:23.116Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 10 Jul 2021 18:25:22 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"48cbbe0a37a1a37e085213d28dfd24be\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"F52A:30A7:9717EF:B7D831:60E9E612"}
+[debug] [2021-07-10T18:25:23.138Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-07-10T18:25:23.503Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-07-10T18:25:23.504Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"KarthikIyer97","id":70603783,"node_id":"MDQ6VXNlcjcwNjAzNzgz","avatar_url":"https://avatars.githubusercontent.com/u/70603783?v=4","gravatar_id":"","url":"https://api.github.com/users/KarthikIyer97","html_url":"https://github.com/KarthikIyer97","followers_url":"https://api.github.com/users/KarthikIyer97/followers","following_url":"https://api.github.com/users/KarthikIyer97/following{/other_user}","gists_url":"https://api.github.com/users/KarthikIyer97/gists{/gist_id}","starred_url":"https://api.github.com/users/KarthikIyer97/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/KarthikIyer97/subscriptions","organizations_url":"https://api.github.com/users/KarthikIyer97/orgs","repos_url":"https://api.github.com/users/KarthikIyer97/repos","events_url":"https://api.github.com/users/KarthikIyer97/events{/privacy}","received_events_url":"https://api.github.com/users/KarthikIyer97/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":9,"public_gists":0,"followers":1,"following":1,"created_at":"2020-09-01T19:24:16Z","updated_at":"2021-07-10T18:25:18Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":8264,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as KarthikIyer97 
+[info] 
+[debug] [2021-07-10T18:25:47.946Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-10T18:25:48.216Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-07-10T18:25:48.216Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-10T18:26:10.816Z] >>> [apiv2][query] GET https://api.github.com/repos/..//actions/secrets/public-key type=owner
+[debug] [2021-07-10T18:26:11.072Z] <<< [apiv2][status] GET https://api.github.com/repos/..//actions/secrets/public-key 404
+[debug] [2021-07-10T18:26:11.072Z] <<< [apiv2][body] GET https://api.github.com/repos/..//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-10T18:26:53.025Z] >>> [apiv2][query] GET https://api.github.com/repos/KarthikIyer97/linkedinclone/actions/secrets/public-key type=owner
+[debug] [2021-07-10T18:26:53.294Z] <<< [apiv2][status] GET https://api.github.com/repos/KarthikIyer97/linkedinclone/actions/secrets/public-key 404
+[debug] [2021-07-10T18:26:53.294Z] <<< [apiv2][body] GET https://api.github.com/repos/KarthikIyer97/linkedinclone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
